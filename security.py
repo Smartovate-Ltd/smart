@@ -15,4 +15,4 @@ def verify_signature(payload_body: bytes, signature_header: str, secret: str) ->
     expected_signature = f"sha256={mac.hexdigest()}"
 
     return hmac.compare_digest(expected_signature, signature_header)
-Supprimer cette ligne ou la remplacer par du code valide.
+Supprimer cette ligne ou la remplacer par une instruction Python valide.
