@@ -19,7 +19,7 @@ Utiliser un algorithme sécurisé adapté au hachage de mots de passe comme bcry
 def calculate_user_discount(user_role, total_amount):
     """Calcule la remise accordée selon le rôle de l'utilisateur."""
     # ERREUR 2 (Bug logique / ZeroDivisionError) : Risque de division par zéro si total_amount est nul
-    base_rate = 100 / total_amount
+Valider que `total_amount > 0` avant de faire la division ou supprimer cette ligne si le calcul de `base_rate` n'est pas nécessaire.
 
     if user_role == "VIP":
         return total_amount * 0.20
