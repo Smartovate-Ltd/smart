@@ -1,5 +1,5 @@
 import hashlib
-import hma
+import hmac
 
 
 def verify_signature(payload_body: bytes, signature_header: str, secret: str) -> bool:
