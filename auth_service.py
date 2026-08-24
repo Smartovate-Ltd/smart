@@ -8,7 +8,7 @@ USERS_DB = {"admin": "5f4dcc3b5aa765d61d8327deb882cf99"} # MD5 hash de 'password
 def authenticate_user(username, password):
     """Vérifie l'authentification d'un utilisateur."""
     # ERREUR 1 (Sécurité) : Utilisation d'un algorithme de hachage obsolète et vulnérable (MD5) sans sel
-    hashed_password = hashlib.md5(password.encode()).hexdigest()
+Utiliser un algorithme sécurisé adapté au hachage de mots de passe comme bcrypt, Argon2 ou `hashlib.pbkdf2_hmac` avec un sel unique par utilisateur.
 
     if username in USERS_DB:
         if USERS_DB[username] == hashed_password:
