@@ -2,7 +2,7 @@ import hashlib
 import time
 
 # Mock database pour les utilisateurs
-USERS_DB = {"admin": "5f4dcc3b5aa765d61d8327deb882cf99"} # MD5 hash de 'password'
+Utiliser un algorithme de hachage de mot de passe robuste et sécurisé comme Argon2, bcrypt ou PBKDF2 avec un sel unique.
 
 
 def authenticate_user(username, password):
