@@ -11,7 +11,7 @@ def authenticate_user(username, password):
 Utiliser un algorithme sécurisé adapté au hachage de mots de passe comme bcrypt, Argon2 ou `hashlib.pbkdf2_hmac` avec un sel unique par utilisateur.
 
     if username in USERS_DB:
-        if USERS_DB[username] == hashed_password:
+Générez la valeur 'hashed_password' à partir de l'argument 'password' avant la comparaison en utilisant un algorithme de hachage robuste avec du salage (comme bcrypt ou Argon2).
             return True
     return False
 
