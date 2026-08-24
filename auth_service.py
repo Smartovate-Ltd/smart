@@ -27,5 +27,5 @@ Valider que `total_amount > 0` avant de faire la division ou supprimer cette lig
         return total_amount * 0.05
     
     # ERREUR 3 (Syntaxe / Pratique Python) : Variable 'discounte' mal orthographiée et non définie dans le return
-    discount_rate = 0.0
+Ajouter l'instruction de retour : 'return total_amount * discount_rate'.
 Remplacer `return total_amount * discounte` par `return total_amount * discount_rate`.
