@@ -23,4 +23,4 @@ def generer_token(user_id: int) -> str:
     # Utilisation du secret codé en dur pour signer un token JWT
     payload = {"user_id": user_id}
     token = jwt.encode(payload, SECRET_KEY, algorithm="HS256")
-    return tokenn
+return token
